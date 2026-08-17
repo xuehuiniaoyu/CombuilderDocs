@@ -1,0 +1,6 @@
+## ESP32 UI Board — 硬件抽象层
+## lvgl 版本由 main/idf_component.yml 钉扎；此处拉 port
+dependencies:
+  espressif/esp_lvgl_port: "~2.6.0"
+  idf:
+    version: ">=5.1.0"

@@ -1,0 +1,182 @@
+{
+  "application": {
+    "name": "ESP32 Clock Demo",
+    "version": "0.1.0",
+    "description": "基础示例：Activity + DigitalClock 组件 + IoService + hthm 字库",
+    "driver_class": "App",
+    "driver_source": "app/application.cpp",
+    "entry": {
+      "activity": "MainActivity"
+    },
+    "display": {
+      "width": 240,
+      "height": 240
+    },
+    "focus": {
+      "defaultOutline": false,
+      "outlineColor": "#4ade80"
+    },
+    "uiDefaults": {
+      "width": "wrap_content",
+      "height": "wrap_content",
+      "bias": 50
+    },
+    "network": {
+      "wifi_ssid": "H3C_523204",
+      "wifi_password": "xhny$2617",
+      "ntp_server": "ntp.aliyun.com",
+      "timezone": "CST-8",
+      "ntp_timeout_ms": 20000
+    },
+    "activities": [
+      {
+        "name": "MainActivity",
+        "config": "ui/activities/main_activity.json",
+        "driver_class": "MainActivity",
+        "driver_source": "app/activities/main_activity.cpp",
+        "mode": "default"
+      },
+      {
+        "name": "ListActivity",
+        "config": "ui/activities/list.json",
+        "driver_class": "ListActivity",
+        "driver_source": "app/activities/list.cpp",
+        "mode": "default"
+      },
+      {
+        "name": "WiFiConfigActivity",
+        "config": "ui/activities/wifi_config.json",
+        "driver_class": "WiFiConfigActivity",
+        "driver_source": "app/activities/wifi_config.cpp",
+        "mode": "default"
+      }
+    ],
+    "services": [
+      {
+        "name": "IoService",
+        "driver_class": "IoService",
+        "driver_source": "app/services/io_service_app.cpp",
+        "priority": -1,
+        "stack_size": 8192,
+        "workers": 2
+      }
+    ],
+    "custom_components": [
+      {
+        "name": "DigitalClock",
+        "config": "ui/components/digital_clock.json",
+        "driver_class": "DigitalClock",
+        "driver_source": "app/components/digital_clock.cpp"
+      }
+    ],
+    "fonts": [
+      {
+        "id": "embedded_default",
+        "file": "fonts/font_embedded_default.bin",
+        "system": true,
+        "default": true
+      },
+      {
+        "id": "hthm",
+        "file": "fonts/hthm.bin"
+      },
+      {
+        "id": "hthm_28",
+        "file": "fonts/hthm_28.bin"
+      },
+      {
+        "id": "hthm_30",
+        "file": "fonts/hthm_30.bin"
+      },
+      {
+        "id": "hthm_32",
+        "file": "fonts/hthm_32.bin"
+      },
+      {
+        "id": "hthm_40",
+        "file": "fonts/hthm_40.bin"
+      },
+      {
+        "id": "hthm_60",
+        "file": "fonts/hthm_60.bin"
+      },
+      {
+        "id": "hthm_56",
+        "file": "fonts/hthm_56.bin"
+      },
+      {
+        "id": "hthm_50",
+        "file": "fonts/hthm_50.bin"
+      },
+      {
+        "id": "hthm_12",
+        "file": "fonts/hthm_12.bin"
+      },
+      {
+        "id": "hthm_46",
+        "file": "fonts/hthm_46.bin"
+      },
+      {
+        "id": "hthm_11",
+        "file": "fonts/hthm_11.bin"
+      },
+      {
+        "id": "hthm_16",
+        "file": "fonts/hthm_16.bin"
+      },
+      {
+        "id": "hthm_18",
+        "file": "fonts/hthm_18.bin"
+      },
+      {
+        "id": "hthm_42",
+        "file": "fonts/hthm_42.bin"
+      },
+      {
+        "id": "tpkg_hello",
+        "file": "fonts/tpkg_hello.bin"
+      }
+    ],
+    "default_font": "embedded_default",
+    "storage": {
+      "type": "auto",
+      "flash_mount": "/flash",
+      "sdcard_mount": "/sdcard",
+      "littlefs_partition": "storage",
+      "littlefs_fs_size": 4194304,
+      "littlefs_block_size": 4096
+    },
+    "keys": [
+      {
+        "id": "power",
+        "label": "电源",
+        "key_code": 0,
+        "color": "#FF6B6B"
+      },
+      {
+        "id": "boot",
+        "label": "Boot",
+        "key_code": 1,
+        "color": "#4ECDC4"
+      },
+      {
+        "id": "volume_up",
+        "label": "音量+",
+        "key_code": 2,
+        "color": "#45B7D1"
+      },
+      {
+        "id": "volume_down",
+        "label": "音量-",
+        "key_code": 3,
+        "color": "#FFA07A"
+      },
+      {
+        "id": "back",
+        "label": "返回",
+        "key_code": 4,
+        "color": "#A78BFA"
+      }
+    ]
+  }
+}

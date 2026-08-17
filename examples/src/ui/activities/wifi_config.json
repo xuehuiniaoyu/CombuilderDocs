@@ -1,0 +1,80 @@
+{
+  "activity": {
+    "name": "WiFiConfigActivity",
+    "title": "WiFi配网",
+    "driver_class": "WiFiConfigActivity",
+    "layout": {
+      "type": "relative",
+      "id": "root",
+      "width": "match_parent",
+      "height": "match_parent",
+      "padding": 8,
+      "background": "#0f172a",
+      "children": [
+        {
+          "type": "text",
+          "id": "title",
+          "text": "WiFi配网",
+          "fontSize": 16,
+          "color": "#f8fafc",
+          "align": "center",
+          "width": "match_parent",
+          "align_parent": "top"
+        },
+        {
+          "type": "text",
+          "id": "hint",
+          "text": "短按 Boot 返回主页",
+          "fontSize": 11,
+          "color": "#64748b",
+          "align": "center",
+          "width": "match_parent",
+          "align_parent": "bottom",
+          "margin": [
+            0,
+            0,
+            4,
+            0
+          ],
+          "align_parent_bottom": true
+        },
+        {
+          "type": "column",
+          "id": "instruction_box",
+          "top_id": "title",
+          "height": "0",
+          "width": "match_parent",
+          "background": "#1e293b",
+          "padding": [
+            5,
+            8,
+            5,
+            8
+          ],
+          "gap": 0,
+          "radius": 6,
+          "margin": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "scrollable": true,
+          "scrollbarMode": "off",
+          "children": [
+            {
+              "type": "text",
+              "id": "instruction",
+              "text": "请按以下步骤进行配网：\n1. 手机连接设备WiFi\n   SSID: ESP32-XXXX\n2. 浏览器打开：192.168.4.1\n3. 输入WiFi信息并连接\n4. 成功后自动同步时间并返回",
+              "fontSize": 12,
+              "color": "#cbd5e1",
+              "width": "match_parent",
+              "height": "wrap_content"
+            }
+          ],
+          "bottom_id": "hint"
+        }
+      ]
+    }
+  }
+}

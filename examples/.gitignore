@@ -1,0 +1,17 @@
+# UI / 打包产物（由「编译工程」生成）
+/build/app_project/
+/build/dist/
+/dist/
+/app_project/
+
+# IDF 构建（与 app_project 隔离）
+/build/idf/
+/managed_components/
+/dependencies.lock
+/sdkconfig.old
+
+# 模拟器本地缓存
+/.esp32-ui-build/
+
+# 兼容旧布局残留
+/firmware/

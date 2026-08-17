@@ -1,0 +1,58 @@
+{
+  "activity": {
+    "name": "ListActivity",
+    "title": "ListActivity",
+    "driver_class": "ListActivity",
+    "layout": {
+      "type": "relative",
+      "id": "root",
+      "width": "match_parent",
+      "height": "match_parent",
+      "background": "#1e1e1e",
+      "padding": 2,
+      "children": [
+        {
+          "type": "text",
+          "id": "title",
+          "text": "ListActivity",
+          "fontSize": 18,
+          "color": "#FFFFFF"
+        },
+        {
+          "type": "grid",
+          "id": "list_659",
+          "top_id": "title",
+          "bottom_id": "0",
+          "height": "0",
+          "width": "match_parent",
+          "background": "#111111",
+          "itemHeight": 40,
+          "focusable": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "text_0",
+              "text": "Item",
+              "role": "itemTemplate",
+              "width": "match_parent",
+              "height": 40,
+              "color": "#ffffff",
+              "fontSize": 14,
+              "focusStyle": {
+                "focused": {
+                  "background": "#2563eb",
+                  "color": "#ffffff"
+                },
+                "blurred": {
+                  "background": "#1a1a1a",
+                  "color": "#e5e5e5"
+                }
+              }
+            }
+          ],
+          "columns": 4
+        }
+      ]
+    }
+  }
+}

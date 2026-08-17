@@ -1,0 +1,48 @@
+{
+  "name": "DigitalClock",
+  "root": {
+    "type": "column",
+    "id": "digital_clock",
+    "width": "match_parent",
+    "height": "wrap_content",
+    "alignH": "center",
+    "padding": 8,
+    "scrollable": false,
+    "scrollbarMode": "off",
+    "children": [
+      {
+        "type": "text",
+        "id": "clock_date",
+        "text": "----/--/--",
+        "fontChars": "0123456789-/",
+        "fontId": "hthm",
+        "fontSize": 16,
+        "color": "#94a3b8",
+        "align": "center",
+        "width": "match_parent"
+      },
+      {
+        "type": "text",
+        "id": "clock_time",
+        "text": "--:--:--",
+        "fontChars": "0123456789:",
+        "fontId": "hthm",
+        "color": "#f8fafc",
+        "align": "center",
+        "width": "match_parent",
+        "margin": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "fontSize": 42
+      },
+      {
+        "type": "image",
+        "id": "image_938",
+        "src": "images/jendigitalart-bear-134_128_anim.bin"
+      }
+    ]
+  }
+}

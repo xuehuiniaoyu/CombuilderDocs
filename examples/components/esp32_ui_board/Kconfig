@@ -1,0 +1,21 @@
+menu "ESP32 UI Board"
+
+    choice ESP32_UI_BOARD
+        prompt "开发板型号"
+        default ESP32_UI_BOARD_XINGZHI_CUBE_1_54TFT_ML307
+        help
+            选择板级 pins 与驱动实现。新增板型：在 boards/<name>/ 添加 pins.h，并在本 choice 与 pins.h 转发中注册。
+
+        config ESP32_UI_BOARD_XINGZHI_CUBE_1_54TFT_ML307
+            bool "无名科技星智 Cube 1.54TFT (ML307)"
+            help
+                ESP32-S3 + ST7789 240x240 + I2S 直驱音频 + GPIO 按键。
+                引脚与行为参考 comlua / xiaozhi xingzhi-cube-1.54tft-ml307。
+
+        config ESP32_UI_BOARD_NONE
+            bool "Generic / 无板型（占位）"
+            help
+                不初始化真实显示/音频，仅保证组件可链接。
+    endchoice
+
+endmenu
