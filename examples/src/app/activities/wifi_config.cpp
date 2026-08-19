@@ -61,20 +61,20 @@ void WiFiConfigActivity::onCreate() {
     });
 
     /* 用真实 SoftAP 名刷新说明文案 */
-    if (lv_obj_t * ins = findView("instruction")) {
-        char text[320];
-        std::snprintf(
-            text,
-            sizeof(text),
-            "请按以下步骤进行配网：\n"
-            "1. 手机连接设备WiFi\n"
-            "   SSID: %s\n"
-            "2. 浏览器打开：192.168.4.1\n"
-            "3. 输入WiFi信息并连接\n"
-            "4. 成功后自动同步时间并返回",
-            portal.apSsid());
-        lv_label_set_text(ins, text);
-    }
+    // if (lv_obj_t * ins = findView("instruction")) {
+    //     char text[320];
+    //     std::snprintf(
+    //         text,
+    //         sizeof(text),
+    //         "请按以下步骤进行配网：\n"
+    //         "1. 手机连接设备WiFi\n"
+    //         "   SSID: %s\n"
+    //         "2. 浏览器打开：192.168.4.1\n"
+    //         "3. 输入WiFi信息并连接\n"
+    //         "4. 成功后自动同步时间并返回",
+    //         portal.apSsid());
+    //     lv_label_set_text(ins, text);
+    // }
 
 #if defined(ESP_PLATFORM)
     if (ok) {

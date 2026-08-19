@@ -1,9 +1,9 @@
 menu "ESP32 UI Firmware"
 
     config ESP32_UI_APP_PROJECT_PATH
-        string "app_project 路径（相对 firmware/ 或绝对路径）"
-        default "../examples/app_project"
+        string "app_project 路径（相对工程根或绝对路径）"
+        default "build/app_project"
         help
-            指向「编译工程」产出的 app_project 目录。
+            指向「编译工程」产出的 app_project 目录。正式构建前请先执行 Combuilder「编译工程」。
 
 endmenu

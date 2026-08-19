@@ -47,7 +47,8 @@
                   "background": "#1a1a1a",
                   "color": "#e5e5e5"
                 }
-              }
+              },
+              "fontChars": "item_  -0123456789"
             }
           ],
           "columns": 4

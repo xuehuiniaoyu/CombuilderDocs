@@ -594,7 +594,7 @@ CONFIG_PARTITION_TABLE_MD5=y
 #
 # ESP32 UI Firmware
 #
-CONFIG_ESP32_UI_APP_PROJECT_PATH="../examples/app_project"
+CONFIG_ESP32_UI_APP_PROJECT_PATH="build/app_project"
 # end of ESP32 UI Firmware
 
 #

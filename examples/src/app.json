@@ -13,7 +13,7 @@
       "height": 240
     },
     "focus": {
-      "defaultOutline": false,
+      "defaultOutline": true,
       "outlineColor": "#4ade80"
     },
     "uiDefaults": {
@@ -73,71 +73,34 @@
       {
         "id": "embedded_default",
         "file": "fonts/font_embedded_default.bin",
-        "system": true,
-        "default": true
+        "system": true
       },
       {
-        "id": "hthm",
-        "file": "fonts/hthm.bin"
+        "id": "default_11",
+        "file": "fonts/default_11.bin"
       },
       {
-        "id": "hthm_28",
-        "file": "fonts/hthm_28.bin"
+        "id": "default_14",
+        "file": "fonts/default_14.bin"
       },
       {
-        "id": "hthm_30",
-        "file": "fonts/hthm_30.bin"
+        "id": "default_16",
+        "file": "fonts/default_16.bin"
       },
       {
-        "id": "hthm_32",
-        "file": "fonts/hthm_32.bin"
+        "id": "default_18",
+        "file": "fonts/default_18.bin"
       },
       {
-        "id": "hthm_40",
-        "file": "fonts/hthm_40.bin"
-      },
-      {
-        "id": "hthm_60",
-        "file": "fonts/hthm_60.bin"
-      },
-      {
-        "id": "hthm_56",
-        "file": "fonts/hthm_56.bin"
-      },
-      {
-        "id": "hthm_50",
-        "file": "fonts/hthm_50.bin"
-      },
-      {
-        "id": "hthm_12",
-        "file": "fonts/hthm_12.bin"
-      },
-      {
-        "id": "hthm_46",
-        "file": "fonts/hthm_46.bin"
-      },
-      {
-        "id": "hthm_11",
-        "file": "fonts/hthm_11.bin"
-      },
-      {
-        "id": "hthm_16",
-        "file": "fonts/hthm_16.bin"
-      },
-      {
-        "id": "hthm_18",
-        "file": "fonts/hthm_18.bin"
+        "id": "hthm_14",
+        "file": "fonts/hthm_14.bin"
       },
       {
         "id": "hthm_42",
         "file": "fonts/hthm_42.bin"
-      },
-      {
-        "id": "tpkg_hello",
-        "file": "fonts/tpkg_hello.bin"
       }
     ],
-    "default_font": "embedded_default",
+    "default_font": "default",
     "storage": {
       "type": "auto",
       "flash_mount": "/flash",
