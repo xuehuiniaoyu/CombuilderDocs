@@ -1,0 +1,17 @@
+{
+  "idf.buildPath": "${workspaceFolder}/build/idf",
+  "cmake.buildDirectory": "${workspaceFolder}/build/idf",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.configureOnOpen": false,
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=${workspaceFolder}/build/idf"
+  ]
+}
