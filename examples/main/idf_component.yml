@@ -1,6 +1,0 @@
-## main 组件依赖（与 IDF Component Manager 一致：build 时拉到 managed_components/）
-dependencies:
-  lvgl/lvgl: "~9.2.2"
-  joltwallet/littlefs: "^1.14.0"
-  idf:
-    version: ">=5.1.0"
