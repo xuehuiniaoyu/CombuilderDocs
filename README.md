@@ -1,4 +1,4 @@
-# Demo45
+# Combuilder
 
 ## 首次安装 Python 依赖（生成 flash 镜像 / 图片处理会用到）
 
