@@ -1,4 +1,4 @@
-# Combuilder
+# Combuilder UI 与 MCU 解耦，一份代码多平台编译
 
 ## 首次安装 Python 依赖（生成 flash 镜像 / 图片处理会用到）
 
