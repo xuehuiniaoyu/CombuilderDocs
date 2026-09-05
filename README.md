@@ -1,4 +1,4 @@
-# Demo45
+# Combuilder
 
 ## 首次安装 Python 依赖（生成 flash 镜像 / 图片处理会用到）
 
@@ -135,7 +135,7 @@ pip install -r requirements.txt
 ## 工程目录速查
 
 ```
-Demo45.code-workspace                     # 推荐用此文件打开 VS Code
+.code-workspace                     # 推荐用此文件打开 VS Code
 platforms/<platform>/                         # 平台工程（CMakeLists.txt + main + components）
   CMakeLists.txt / main / components/<platform>_ui_board
   build/                                      # 平台原生构建目录
